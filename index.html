@@ -269,6 +269,22 @@
 
       <div class="card">
         <div class="card-top">
+          <h3>Extrator de Documentos Fiscais</h3>
+          <span class="status live">público</span>
+        </div>
+        <p class="desc">Lê nota fiscal, boleto ou orçamento (foto ou PDF) e extrai os dados com OCR + LLM. Quem decide se o resultado pode ir para a planilha não é o modelo — é código que recalcula o que dá para recalcular.</p>
+        <div class="highlight">Validação determinística antes de qualquer gravação: dígito verificador de CNPJ (inclusive o formato alfanumérico em vigor desde 31/07/2026) e CPF, dígito verificador da chave de NF-e, CNPJ do emitente conferido contra o embutido na chave, e soma dos itens contra o total declarado. 27 testes automatizados, pipeline validado contra a API real — que já pegou um bug de data e um rate limit de provedor antes de virar produto.</div>
+        <div class="tech pill-row">
+          <span class="pill">OCR</span>
+          <span class="pill">LLM</span>
+          <span class="pill">n8n</span>
+          <span class="pill">Node.js</span>
+        </div>
+        <a class="link" href="https://github.com/TiBelleck/ai-document-extractor" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
           <h3>Acompanhamento de Sinistro</h3>
           <span class="status live">estudo de caso</span>
         </div>
